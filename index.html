@@ -8,7 +8,35 @@
 </head>
 <body>
 
-    <form action
+    <form enctype="multipart/form-data" action="simpan.php" method="post">
+        <table>
+
+            <tr>
+                <td>Gambar</td>
+                <td>
+                    <input type="file" name="gambar">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kereta</td>
+                <td>
+                    <select name="kereta" required>
+                        <optgroup label="Toyota">
+                            <option>Vios</option>
+                            <option>Altis</option>
+                            <option>Camry</option>
+                        </optgroup>
+                        <optgroup label="Perodua">
+                            <option>Kancil</option>
+                            <option>Viva</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    
+    </form>
     
 </body>
 </html>
